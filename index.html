@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Password generator app</title>
+</head>
+
+<body>
+
+  <div class="card">
+    <h1 class="title">Password Generator</h1>
+
+    <div class="password">
+      <div class="password-generated">P4$5W0rD!</div>
+      <div class="copy-password"><span class="copy-password-text">COPIED</span><img class="img-copy-pw" src="assets/images/icon-copy.svg"
+          alt=""></div>
+    </div>
+
+
+    <div class="gen-password-card">
+      <h2 class="subtitle">Character Length <span class="password-characters">10</span></h2>
+
+      <input type="range" value="10" name="" id="character-range" class="input-line" min="8" max="32">
+
+      <input type="checkbox" name="" id="uppercase">
+      <input type="checkbox" name="" id="lowercase">
+      <input type="checkbox" name="" id="numbers">
+      <input type="checkbox" name="" id="symbols">
+
+      <label for="uppercase" class="label"><i class="box-select" id="box-uppercase"><img id="arrow-uppercase" src="assets/images/icon-check.svg" alt=""></i> <span
+          class="label-text">Include Uppercase Letters</span>
+      </label>
+      <label for="lowercase" class="label"><i class="box-select" id="box-lowercase"><img id="arrow-lowercase" src="assets/images/icon-check.svg" alt=""></i><span
+          class="label-text">Include Lowercase Letters</span>
+      </label>
+      <label for="numbers" class="label"><i class="box-select" id="box-numbers"><img id="arrow-numbers" src="assets/images/icon-check.svg" alt=""></i><span
+          class="label-text"> Include Numbers</span>
+      </label>
+      <label for="symbols" class="label"><i class="box-select" id="box-symbols"><img id="arrow-symbols" src="assets/images/icon-check.svg" alt=""></i><span
+          class="label-text">Include Symbols</span>
+      </label>
+
+      <div class="strength-box">
+        <span class="strength-text">Strength</span>
+        <span class="strength-level">
+          <span class="level-text"></span>
+          <span class="level-icon">
+            <i class="symbol-level" id="level-1"></i>
+            <i class="symbol-level" id="level-2"></i>
+            <i class="symbol-level" id="level-3"></i>
+            <i class="symbol-level" id="level-4"></i>
+          </span>
+        </span>
+      </div>
+
+      <button class="generate-password">Generate <img src="assets/images/icon-arrow-right.svg" alt=""></button>
+    </div>
+  </div>
+
+
+  <script src="code.js"></script>
+</body>
+
+</html>
